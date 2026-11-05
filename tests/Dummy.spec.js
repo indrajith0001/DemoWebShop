@@ -12,7 +12,7 @@ test('User should be able to navigate to registration', async ({ page }) => {
   await page.click('text=Register');
   await expect(page).toHaveURL(/.*register/);
   await page.fill('#FirstName', 'John');
-  await page.fill('#LastName', 'Doe');
+  await page.fill('#LastName', 'Smith');
   await page.fill('#Email', `test${Date.now()}@example.com`);
   await page.fill('#Password', 'Password123');
   await page.fill('#ConfirmPassword', 'Password123');
