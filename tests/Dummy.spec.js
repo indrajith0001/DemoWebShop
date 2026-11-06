@@ -5,6 +5,7 @@ test('Home page should have correct title and logo', async ({ page }) => {
   await expect(page).toHaveTitle(/Demo Web Shop/);
   const logo = page.locator('.header-logo img');
   await expect(logo).toBeVisible();
+  console.log("checking git branch");
 });
 
 test('User should be able to navigate to registration', async ({ page }) => {
